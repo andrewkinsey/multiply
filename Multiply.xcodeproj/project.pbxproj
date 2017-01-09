@@ -14,6 +14,7 @@
 		C8D142FC1D89A04200AF7AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D142FA1D89A04200AF7AF9 /* LaunchScreen.storyboard */; };
 		C8D143071D89A04300AF7AF9 /* MultiplyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D143061D89A04300AF7AF9 /* MultiplyTests.swift */; };
 		C8D143121D89A04300AF7AF9 /* MultiplyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D143111D89A04300AF7AF9 /* MultiplyUITests.swift */; };
+		C8D143221D89A08D00AF7AF9 /* MultiplyDirections.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C8D143211D89A08D00AF7AF9 /* MultiplyDirections.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C8D1430D1D89A04300AF7AF9 /* MultiplyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiplyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D143111D89A04300AF7AF9 /* MultiplyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplyUITests.swift; sourceTree = "<group>"; };
 		C8D143131D89A04300AF7AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8D143211D89A08D00AF7AF9 /* MultiplyDirections.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = MultiplyDirections.pdf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C8D142F81D89A04200AF7AF9 /* Assets.xcassets */,
 				C8D142FA1D89A04200AF7AF9 /* LaunchScreen.storyboard */,
 				C8D142FD1D89A04200AF7AF9 /* Info.plist */,
+				C8D143211D89A08D00AF7AF9 /* MultiplyDirections.pdf */,
 			);
 			path = Multiply;
 			sourceTree = "<group>";
@@ -193,13 +196,17 @@
 				TargetAttributes = {
 					C8D142ED1D89A04200AF7AF9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D33JCW8ARG;
+						LastSwiftMigration = 0820;
 					};
 					C8D143011D89A04300AF7AF9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = C8D142ED1D89A04200AF7AF9;
 					};
 					C8D1430C1D89A04300AF7AF9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = C8D142ED1D89A04200AF7AF9;
 					};
 				};
@@ -231,6 +238,7 @@
 			files = (
 				C8D142FC1D89A04200AF7AF9 /* LaunchScreen.storyboard in Resources */,
 				C8D142F91D89A04200AF7AF9 /* Assets.xcassets in Resources */,
+				C8D143221D89A08D00AF7AF9 /* MultiplyDirections.pdf in Resources */,
 				C8D142F71D89A04200AF7AF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,10 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Multiply/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.Multiply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -412,10 +424,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Multiply/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.Multiply;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -427,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.MultiplyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiply.app/Multiply";
 			};
 			name = Debug;
@@ -439,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.MultiplyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiply.app/Multiply";
 			};
 			name = Release;
@@ -450,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.MultiplyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Multiply;
 			};
 			name = Debug;
@@ -461,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Andrew.MultiplyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Multiply;
 			};
 			name = Release;
@@ -484,6 +504,7 @@
 				C8D143181D89A04300AF7AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8D143191D89A04300AF7AF9 /* Build configuration list for PBXNativeTarget "MultiplyTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +513,7 @@
 				C8D1431B1D89A04300AF7AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8D1431C1D89A04300AF7AF9 /* Build configuration list for PBXNativeTarget "MultiplyUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +522,7 @@
 				C8D1431E1D89A04300AF7AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
